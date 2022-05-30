@@ -1,0 +1,37 @@
+@media (max-width: 1400px) {
+  .math-inputs {
+    width: 100%;
+    margin-bottom: 70px;
+    height: 750px;
+  }
+  .checkbox-buttons {
+    max-width: 100%;
+    max-height: 1200px;
+    height: 750px;
+  }
+  .math-buttons-inputs {
+    flex-direction: column-reverse;
+    height: unset;
+  }
+  .progression-input-box {
+    width: 94%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .progression-input-box label {
+    margin: 20px 0;
+  }
+  .math-sn-change-formula {
+    top: unset;
+    bottom: 2%;
+  }
+  .calculate-button {
+    margin-bottom: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .calculate-button {
+    height: 100px;
+    font-size: 34px;
+  }
+}
