@@ -10,7 +10,7 @@
   "dependencies": {
     "element-plus": "^2.2.2",
     "git": "^0.1.5",
-    "vue": "^3.2.25",
+    "vue": "^3.2.33",
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
