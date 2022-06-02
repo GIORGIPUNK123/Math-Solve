@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 const mathBoxes = ref([
   { name: 'არითმეტიკული პროგრესია', link: 'arithmetic-proggresion' },
-  { name: 'გეომეტრიული პროგრესია', link: 'Geometric-Proggresion' },
+  { name: 'გეომეტრიული პროგრესია', link: 'geometric-Proggresion' },
 ]);
 </script>
 
@@ -11,11 +11,17 @@ const mathBoxes = ref([
   <div class="home-page">
     <h1 class="home-page-heading">Math Solve</h1>
     <div class="boxes">
-      <div class="box" v-for="(mathBox, index) in mathBoxes" :key="index">
-        <router-link :to="mathBox.link">
-          {{ mathBox.name }}
-        </router-link>
-      </div>
+      <router-link
+        v-for="(mathBox, index) in mathBoxes"
+        :key="index"
+        :to="mathBox.link"
+      >
+        <div class="box">
+          <h2>
+            {{ mathBox.name }}
+          </h2>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
