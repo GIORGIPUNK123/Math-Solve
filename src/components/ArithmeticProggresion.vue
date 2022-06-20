@@ -29,9 +29,7 @@ const sn = ref(1);
 </script>
 
 <template>
-  <router-link class="math-back-btn" to="/Math-Project-Website/">
-    Back
-  </router-link>
+  <router-link class="math-back-btn" to="/Math-Project/"> Back </router-link>
   <el-button
     v-if="isDisabled[3]"
     class="math-sn-change-formula"

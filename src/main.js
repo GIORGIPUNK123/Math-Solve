@@ -10,17 +10,17 @@ import ErrorPage from './components/ErrorPage.vue';
 
 const routes = [
   {
-    path: '/Math-Project-Website',
+    path: '/Math-Project',
     name: 'Home',
     component: HomePage,
   },
   {
-    path: '/Math-Project-Website/Arithmetic-Proggresion',
+    path: '/Math-Project/Arithmetic-Proggresion',
     name: 'ArithmeticProggresion',
     component: ArithmeticProggresion,
   },
   {
-    path: '/Math-Project-Website/Geometric-Proggresion',
+    path: '/Math-Project/Geometric-Proggresion',
     name: 'GeometricProggresion',
     component: GeometricProggresion,
   },
