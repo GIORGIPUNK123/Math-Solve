@@ -6,6 +6,7 @@ import App from './App.vue';
 import HomePage from './components/HomePage.vue';
 import ArithmeticProggresion from './components/ArithmeticProggresion.vue';
 import GeometricProggresion from './components/GeometricProggresion.vue';
+import ErrorPage from './components/ErrorPage.vue';
 
 const routes = [
   {
@@ -23,10 +24,16 @@ const routes = [
     name: 'GeometricProggresion',
     component: GeometricProggresion,
   },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'Not-Found',
+    component: ErrorPage,
+  },
 ];
 
 const router = createRouter({
   routes: routes,
+  history: createWebHistory(),
 });
 
 const app = createApp(App);

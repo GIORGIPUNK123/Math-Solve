@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-
 const mathBoxes = ref([
   { name: 'არითმეტიკული პროგრესია', link: 'arithmetic-proggresion' },
   { name: 'გეომეტრიული პროგრესია', link: 'geometric-Proggresion' },
