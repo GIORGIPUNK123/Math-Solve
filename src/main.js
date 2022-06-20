@@ -1,5 +1,9 @@
 import { createApp } from 'vue';
-import { createRouter, createWebHistory } from 'vue-router';
+import {
+  createRouter,
+  createWebHistory,
+  createWebHashHistory,
+} from 'vue-router';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 import App from './App.vue';
@@ -33,7 +37,7 @@ const routes = [
 
 const router = createRouter({
   routes: routes,
-  history: createWebHistory(),
+  history: createWebHashHistory(),
 });
 
 const app = createApp(App);
