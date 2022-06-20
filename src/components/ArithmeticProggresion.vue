@@ -29,7 +29,7 @@ const sn = ref(1);
 </script>
 
 <template>
-  <router-link class="math-back-btn" to="/Math-Project-Website">
+  <router-link class="math-back-btn" to="/Math-Project-Website/">
     Back
   </router-link>
   <el-button
