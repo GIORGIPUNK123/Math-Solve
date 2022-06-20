@@ -25,7 +25,7 @@ const routes = [
     component: GeometricProggresion,
   },
   {
-    path: '/Math-Project-Website/:pathMatch(.*)*',
+    path: '/:pathMatch(.*)*',
     name: 'Not-Found',
     component: ErrorPage,
   },
