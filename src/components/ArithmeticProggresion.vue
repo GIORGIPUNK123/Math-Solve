@@ -40,10 +40,10 @@ const sn = ref(1);
   <div class="math-top">
     <h1 class="math-answer">Answer is: {{ answer }}</h1>
     <div class="math-buttons-inputs">
-      <div class="checkbox-buttons">
+      <div class="progression-buttons">
         <el-button
           v-if="isDisabled[0]"
-          class="checkbox-button"
+          class="progression-button"
           :disabled="isDisabled[0]"
           type="success"
           @click="
@@ -54,7 +54,7 @@ const sn = ref(1);
         >
         <el-button
           v-if="!isDisabled[0]"
-          class="checkbox-button"
+          class="progression-button"
           :disabled="isDisabled[0]"
           type="primary"
           @click="
@@ -65,7 +65,7 @@ const sn = ref(1);
         >
         <el-button
           v-if="isDisabled[1]"
-          class="checkbox-button"
+          class="progression-button"
           :disabled="isDisabled[1]"
           type="success"
           @click="
@@ -76,7 +76,7 @@ const sn = ref(1);
         >
         <el-button
           v-if="!isDisabled[1]"
-          class="checkbox-button"
+          class="progression-button"
           :disabled="isDisabled[1]"
           type="primary"
           @click="
@@ -87,7 +87,7 @@ const sn = ref(1);
         >
         <el-button
           v-if="isDisabled[2]"
-          class="checkbox-button"
+          class="progression-button"
           :disabled="isDisabled[2]"
           type="success"
           @click="
@@ -98,7 +98,7 @@ const sn = ref(1);
         >
         <el-button
           v-if="!isDisabled[2]"
-          class="checkbox-button"
+          class="progression-button"
           :disabled="isDisabled[2]"
           type="primary"
           @click="
@@ -109,7 +109,7 @@ const sn = ref(1);
         >
         <el-button
           v-if="isDisabled[3]"
-          class="checkbox-button"
+          class="progression-button"
           :disabled="isDisabled[3]"
           type="success"
           @click="
@@ -210,7 +210,7 @@ const sn = ref(1);
       answer = 'wait';
       fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
         numbers: [a1, n, d],
-        operation: 'findAn',
+        operation: 'findAn_Arithmetic',
       });
     "
     >Calculate An</el-button
@@ -223,7 +223,7 @@ const sn = ref(1);
       answer = 'wait';
       fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
         numbers: [an, n, d],
-        operation: 'findA1',
+        operation: 'findA1_Arithmetic',
       });
     "
     >Calculate A1</el-button
@@ -236,7 +236,7 @@ const sn = ref(1);
       answer = 'wait';
       fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
         numbers: [a1, an, n],
-        operation: 'findD',
+        operation: 'findD_Arithmetic',
       });
     "
     >Calculate D</el-button
@@ -249,7 +249,7 @@ const sn = ref(1);
       answer = 'wait';
       fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
         numbers: [a1, an, n],
-        operation: 'findSn1',
+        operation: 'findSn1_Arithmetic',
       });
     "
     >Calculate Sn</el-button
@@ -263,7 +263,7 @@ const sn = ref(1);
 
       fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
         numbers: [a1, n, d],
-        operation: 'findSn2',
+        operation: 'findSn2_Arithmetic',
       });
     "
     >Calculate Sn</el-button
