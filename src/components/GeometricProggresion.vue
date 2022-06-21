@@ -124,6 +124,10 @@ const sum = ref(1);
       </div>
       <div v-if="isDisabled[0]" class="math-inputs">
         <div class="progression-input-box">
+          <label class="progression-input-text" for="n">N</label>
+          <el-input class="progression-input" v-model="n" />
+        </div>
+        <div class="progression-input-box">
           <label class="progression-input-text" for="bn">Bn</label>
           <el-input class="progression-input" v-model="bn" />
         </div>
@@ -183,7 +187,7 @@ const sum = ref(1);
     @click="
       answer = 'wait';
       fetchFunc('https://math-solve.herokuapp.com/geometric-progression', {
-        numbers: [bn, q],
+        numbers: [n, bn, q],
         operation: 'findB1_Geometric',
       });
     "
@@ -223,7 +227,7 @@ const sum = ref(1);
       answer = 'wait';
       fetchFunc('https://math-solve.herokuapp.com/geometric-progression', {
         numbers: [b1, q, n],
-        operation: 'findSum',
+        operation: 'findSum1_Geometric',
       });
     "
     >Calculate Sum</el-button
