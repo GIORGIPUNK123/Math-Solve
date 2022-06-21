@@ -120,7 +120,7 @@ const sn = ref(1);
         >
         <el-button
           v-if="!isDisabled[3]"
-          class="checkbox-button"
+          class="progression-button"
           :disabled="isDisabled[3]"
           type="primary"
           @click="
