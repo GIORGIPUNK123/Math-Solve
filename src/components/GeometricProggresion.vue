@@ -174,8 +174,8 @@ const sum = ref(1);
           <el-input class="progression-input" v-model="q" />
         </div>
         <div class="progression-input-box">
-          <label class="progression-input-text" for="n">N</label>
-          <el-input class="progression-input" v-model="n" />
+          <label class="progression-input-text" for="bn">Bn</label>
+          <el-input class="progression-input" v-model="bn" />
         </div>
       </div>
     </div>
