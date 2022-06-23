@@ -1,16 +1,28 @@
 @media (max-width: 1400px) {
+  .math-top {
+    margin-top: 70px;
+  }
+  .math-back-btn {
+    font-size: 25px;
+  }
+  .math-answer {
+    font-size: 45px;
+  }
   .math-inputs {
     width: 100%;
-    margin-bottom: 70px;
-    height: 750px;
+    margin-bottom: 40px;
+    height: 450px;
   }
-  .checkbox-buttons {
+  .progression-buttons {
     max-width: 100%;
     max-height: 1200px;
-    height: 750px;
+    height: 450px;
+  }
+  .progression-button {
+    height: 100px;
   }
   .math-buttons-inputs {
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: unset;
   }
   .progression-input-box {
@@ -19,19 +31,61 @@
     justify-content: space-between;
   }
   .progression-input-box label {
-    margin: 20px 0;
+    margin: 10px 0;
   }
   .math-sn-change-formula {
     top: unset;
     bottom: 2%;
   }
   .calculate-button {
-    margin-bottom: 150px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .progression-input {
+    height: 80px;
   }
 }
 @media (max-width: 800px) {
+  .box {
+    width: 220px;
+    height: 220px;
+  }
+  .math-back-btn {
+    font-size: 20px;
+  }
+  .math-answer {
+    font-size: 30px;
+  }
+  .math-buttons-inputs {
+    margin-top: 40px;
+  }
+  .progression-buttons {
+    height: 220px;
+  }
+  .progression-button {
+    height: 40px;
+  }
   .calculate-button {
     height: 100px;
     font-size: 34px;
+  }
+  .progression-input {
+    height: 40px;
+    font-size: 18px;
+  }
+  .progression-input-box label {
+    font-size: 24px;
+  }
+  .math-inputs {
+    height: 240px;
+  }
+  .calculate-button {
+    height: 70px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .home-page-heading {
+    font-size: 50px;
   }
 }
