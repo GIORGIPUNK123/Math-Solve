@@ -11,15 +11,12 @@
   .math-inputs {
     width: 100%;
     margin-bottom: 40px;
-    height: 450px;
+    /* height: 450px; */
   }
   .progression-buttons {
     max-width: 100%;
     max-height: 1200px;
     height: 450px;
-  }
-  .progression-button {
-    height: 100px;
   }
   .math-buttons-inputs {
     flex-direction: column;
