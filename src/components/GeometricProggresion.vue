@@ -226,7 +226,7 @@ const sum = ref(1);
     @click="
       answer = 'wait';
       fetchFunc('https://math-solve.herokuapp.com/geometric-progression', {
-        numbers: [b1, q, n],
+        numbers: [b1, q, bn],
         operation: 'findSum1_Geometric',
       });
     "
