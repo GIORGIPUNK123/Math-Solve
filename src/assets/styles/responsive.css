@@ -24,6 +24,7 @@
   }
   .progression-input-box {
     width: 94%;
+    height: unset;
     flex-direction: column;
     justify-content: space-between;
   }
