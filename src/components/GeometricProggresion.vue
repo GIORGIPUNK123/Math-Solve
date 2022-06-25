@@ -25,6 +25,10 @@ const bn = ref(1);
 const n = ref(1);
 const q = ref(1);
 const sum = ref(1);
+const logN = () => console.log(n.value);
+const logQ = () => console.log(q.value);
+const logB1 = () => console.log(b1.value);
+const logBn = () => console.log(bn.value);
 </script>
 
 <template>
@@ -186,10 +190,14 @@ const sum = ref(1);
     type="success"
     @click="
       answer = 'wait';
-      fetchFunc('https://math-solve.herokuapp.com/geometric-progression', {
-        numbers: [n, bn, q],
-        operation: 'findB1_Geometric',
-      });
+      fetchFunc(
+        'http://localhost:3006/geometric-progression',
+        // 'https://math-solve.herokuapp.com/geometric-progression'
+        {
+          numbers: [n, bn, q],
+          operation: 'findB1_Geometric',
+        }
+      );
     "
     >Calculate B1</el-button
   >
@@ -199,10 +207,14 @@ const sum = ref(1);
     type="success"
     @click="
       answer = 'wait';
-      fetchFunc('https://math-solve.herokuapp.com/geometric-progression', {
-        numbers: [n, b1, q],
-        operation: 'findBn_Geometric',
-      });
+      fetchFunc(
+        'http://localhost:3006/geometric-progression',
+        // 'https://math-solve.herokuapp.com/geometric-progression'
+        {
+          numbers: [n, b1, q],
+          operation: 'findBn_Geometric',
+        }
+      );
     "
     >Calculate Bn</el-button
   >
@@ -212,10 +224,14 @@ const sum = ref(1);
     type="success"
     @click="
       answer = 'wait';
-      fetchFunc('https://math-solve.herokuapp.com/geometric-progression', {
-        numbers: [n, bn, sum],
-        operation: 'findQ_Geometric',
-      });
+      fetchFunc(
+        'http://localhost:3006/geometric-progression',
+        // 'https://math-solve.herokuapp.com/geometric-progression'
+        {
+          numbers: [n, bn, sum],
+          operation: 'findQ_Geometric',
+        }
+      );
     "
     >Calculate Q</el-button
   >
@@ -225,10 +241,14 @@ const sum = ref(1);
     type="success"
     @click="
       answer = 'wait';
-      fetchFunc('https://math-solve.herokuapp.com/geometric-progression', {
-        numbers: [b1, q, bn],
-        operation: 'findSum1_Geometric',
-      });
+      fetchFunc(
+        'http://localhost:3006/geometric-progression',
+        // 'https://math-solve.herokuapp.com/geometric-progression'
+        {
+          numbers: [b1, q, bn],
+          operation: 'findSum1_Geometric',
+        }
+      );
     "
     >Calculate Sum</el-button
   >
