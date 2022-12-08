@@ -208,7 +208,7 @@ const sn = ref(1);
     type="success"
     @click="
       answer = 'wait';
-      fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
+      fetchFunc('https://math-solve-back.onrender.com/arithmetic-progression', {
         numbers: [a1, n, d],
         operation: 'findAn_Arithmetic',
       });
@@ -221,7 +221,7 @@ const sn = ref(1);
     type="success"
     @click="
       answer = 'wait';
-      fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
+      fetchFunc('https://math-solve-back.onrender.com/arithmetic-progression', {
         numbers: [an, n, d],
         operation: 'findA1_Arithmetic',
       });
@@ -234,7 +234,7 @@ const sn = ref(1);
     type="success"
     @click="
       answer = 'wait';
-      fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
+      fetchFunc('https://math-solve-back.onrender.com/arithmetic-progression', {
         numbers: [a1, an, n],
         operation: 'findD_Arithmetic',
       });
@@ -247,7 +247,7 @@ const sn = ref(1);
     type="success"
     @click="
       answer = 'wait';
-      fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
+      fetchFunc('https://math-solve-back.onrender.com/arithmetic-progression', {
         numbers: [a1, an, n],
         operation: 'findSn1_Arithmetic',
       });
@@ -261,7 +261,7 @@ const sn = ref(1);
     @click="
       answer = 'wait';
 
-      fetchFunc('https://math-solve.herokuapp.com/arithmetic-progression', {
+      fetchFunc('https://math-solve-back.onrender.com/arithmetic-progression', {
         numbers: [a1, n, d],
         operation: 'findSn2_Arithmetic',
       });

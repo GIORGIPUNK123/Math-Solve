@@ -192,7 +192,7 @@ const logBn = () => console.log(bn.value);
       answer = 'wait';
       fetchFunc(
         // 'http://localhost:3006/geometric-progression',
-        'https://math-solve.herokuapp.com/geometric-progression',
+        'https://math-solve-back.onrender.com/geometric-progression',
         {
           numbers: [n, bn, q],
           operation: 'findB1_Geometric',
@@ -209,7 +209,7 @@ const logBn = () => console.log(bn.value);
       answer = 'wait';
       fetchFunc(
         // 'http://localhost:3006/geometric-progression',
-        'https://math-solve.herokuapp.com/geometric-progression',
+        'https://math-solve-back.onrender.com/geometric-progression',
         {
           numbers: [n, b1, q],
           operation: 'findBn_Geometric',
@@ -226,7 +226,7 @@ const logBn = () => console.log(bn.value);
       answer = 'wait';
       fetchFunc(
         // 'http://localhost:3006/geometric-progression',
-        'https://math-solve.herokuapp.com/geometric-progression',
+        'https://math-solve-back.onrender.com/geometric-progression',
         {
           numbers: [n, bn, sum],
           operation: 'findQ_Geometric',
@@ -243,7 +243,7 @@ const logBn = () => console.log(bn.value);
       answer = 'wait';
       fetchFunc(
         // 'http://localhost:3006/geometric-progression',
-        'https://math-solve.herokuapp.com/geometric-progression',
+        'https://math-solve-back.onrender.com/geometric-progression',
         {
           numbers: [b1, q, bn],
           operation: 'findSum1_Geometric',
